@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Fernanda Amador Solano </title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals, Fernanda Amador, web development, HTML, CSS, JavaScript portfolio page.">
+
+    <meta name="author" content="Fernanda Amador">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Amador</h1>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/fernanda-amador-solano-im/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng&id=p27#p27"
+                target="_blank">
+                Favorite Scripture
+            </a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Fernanda Amador</h1>
+
+        <!-- LEFT CARD -->
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <p>
+                    My name is Fernanda and I enjoy learning web development.
+                    I like creating websites using HTML, CSS, and JavaScript.
+                    I also enjoy musicals, books, and spending time with my family and friends.
+                </p>
+
+                <img src="images/profile.jpg" alt="Profile picture">
+
+            </div>
+
+            <div class="country">
+
+                <h3>Xalapa, Mexico</h3>
+
+                <div class="country-content">
+
+                    <div>
+                        <img src="images/mexico.jpg" alt="Mexico flag">
+
+                        <p class="flag-caption">
+                            Official Flag of Mexico
+                        </p>
+                    </div>
+
+                    <p>
+                        Mexico is known for its culture, food, traditions,
+                        and beautiful landscapes. It has a rich history and
+                        many famous historical places.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT CARD -->
+        <section class="card">
+
+            <h2>Web Dev Resources</h2>
+
+            <div class="resources">
+
+                <ul>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">
+                            Smashing Magazine
+                        </a></li>
+
+                    <li><a href="https://css-tricks.com/" target="_blank">
+                            CSS Tricks
+                        </a></li>
+
+                    <li><a href="https://www.w3schools.com/" target="_blank">
+                            W3 Schools
+                        </a></li>
+
+                    <li><a href="https://www.udemy.com/" target="_blank">
+                            Udemy
+                        </a></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>2026 🦋 Fernanda Amador 🦋 Mexico
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>

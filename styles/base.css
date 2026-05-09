@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono",
+        monospace;
+    background-color: #eeeeee;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    background-color: #885691;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+main h1 {
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* CARDS */
+
+.card {
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.card h2 {
+    background-color: #885691;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ABOUT SECTION */
+
+.about-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content img {
+    width: 180px;
+    height: auto;
+}
+
+/* COUNTRY SECTION */
+
+.country {
+    padding: 1rem 1.5rem 2rem;
+}
+
+.country h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.country-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.country-content img {
+    width: 180px;
+    height: auto;
+}
+
+.flag-caption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+.resources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 1rem;
+}
+
+.resources a {
+    color: blue;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0d4d7a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    color: yellow;
+    margin-top: 0.5rem;
+}
