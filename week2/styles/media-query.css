@@ -1,0 +1,28 @@
+body {
+    font-family: "Roboto Mono",
+        monospace;
+    color: #222;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #CCDBE6;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
