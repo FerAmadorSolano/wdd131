@@ -16,10 +16,17 @@ h1 {
     font-size: 1.5rem;
 }
 
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 main {
     margin: 1rem auto;
     border: 1px solid rgb(0 0 0 / 0.1);
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #ddd;
     display: flex;
     flex-direction: column;
@@ -56,6 +63,22 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 @media only screen and (min-width: 32.5em) {

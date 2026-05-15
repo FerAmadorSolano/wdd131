@@ -1,13 +1,46 @@
-const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
-const list = document.querySelector("unordered");
-const li = document.createElement("li");
-const deleteButton = document.createElement("button");
+// Element references
+const input = document.querySelector('#favchap');
+const button = document.querySelector('#addChapter');
+const list = document.querySelector('#list');
 
-li.textContent = input.value();
+// Click event
+button.addEventListener('click', function () {
 
-deleteButton.textContent = "❌";
+    // Check if input is blank
+    if (input.value.trim() !== '') {
 
-li.append(deleteButton);
+        // Create list item
+        const li = document.createElement('li');
 
-list.append(li);
+        // Create delete button
+        const deleteButton = document.createElement('button');
+
+        // Add text to li
+        li.textContent = input.value;
+
+        // Add X to delete button
+        deleteButton.textContent = '❌';
+
+        // Append delete button to li
+        li.append(deleteButton);
+
+        // Append li to list
+        list.append(li);
+
+        // Delete event
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus();
+        });
+
+        // Clear input
+        input.value = '';
+
+        // Focus input
+        input.focus();
+    }
+    else {
+        input.focus();
+    }
+
+});

@@ -19,18 +19,20 @@
     <link rel="stylesheet" href="/week2/styles/bom.css">
 
     <!-- JavaScript -->
-    <script src="/week2/scripts/bom.js" defer></script>
+    <script src="scripts/bom.js" defer></script>
 
 </head>
 
 <body>
     <h1>📖 Book of Mormon - Top 10</h1>
     <main>
-        <label for="favchap">Enter Book and Chapter: </label>
-        <input type="text" id="favchap" placeholder="Alma 5">
-        <button type="submit">Add Chapter</button>
+        <div class="input-container">
+            <label for="favchap">Enter Book and Chapter:</label>
+            <input type="text" id="favchap" placeholder="Alma 5">
+
+        </div>
+        <button id="addChapter">Add Chapter</button>
         <ul id="list"></ul>
-        <button aria-label="Close" id="close-button">❌</button>
     </main>
 
 </body>
