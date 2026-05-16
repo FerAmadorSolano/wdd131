@@ -13,7 +13,7 @@ body {
 /* HEADER */
 
 header {
-    background-color: #885691;
+    background-color: #432454;
     color: white;
     padding: 1rem;
     display: flex;
@@ -108,13 +108,13 @@ figure img {
 
 figcaption {
     margin-top: 0.5rem;
-    color: #885691;
+    color: #432454;
 }
 
 /* FOOTER */
 
 footer {
-    background-color: #885691;
+    background-color: #432454;
     color: white;
     text-align: center;
     padding: 1.5rem;
