@@ -1,0 +1,87 @@
+/* Desktop View */
+
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* DATA CARD */
+    .data {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        width: 210px;
+
+        background-color: rgba(255, 252, 245, 0.8);
+        padding: 6rem 1.5rem 1.5rem 4rem;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .data h2 {
+
+        position: absolute;
+        top: 35px;
+        left: 12px;
+
+        background-color: rgba(70, 88, 66, 1);
+        color: white;
+
+        padding: 1rem;
+
+        margin-top: -1.5rem;
+        margin-left: -1.5rem;
+
+        width: 250px;
+
+        text-align: left;
+    }
+
+    /* WEATHER CARD */
+    .weather {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        width: 240px;
+
+        background-color: rgba(255, 252, 245, 0.8);
+        padding: 5.5rem 1.5rem 1.5rem 2.5rem;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .weather h2 {
+
+        position: absolute;
+        bottom: 130px;
+        left: 12px;
+
+        background-color: rgba(70, 88, 66, 1);
+        color: white;
+
+        padding: 1rem;
+
+        margin-top: -1.5rem;
+        margin-left: -1.5rem;
+
+        width: 250px;
+
+        text-align: left;
+    }
+
+    /* WEATHER ICON */
+    .weather img {
+        width: 45px;
+
+        position: absolute;
+
+        top: 15px;
+        right: 70 px;
+    }
+}

@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #92563A;
+    --secondary-color: #465842;
+    --background-color: #FFFCF5;
+    --heading-color: #fff;
+    --text-color: #222;
+
+    --primary-font: "Roboto Mono",
+        monospace;
+
+    --border: 1px solid #ccc;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: var(--border);
+    color: var(--heading-color);
+}
+
+main {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin: 0.6rem 0;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: var(--border);
+    font-size: 0.9rem;
+    color: var(--heading-color);
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data,
+.weather {
+    margin: 1rem;
+    padding: 2rem;
+    border-bottom: var(--border);
+    text-align: center;
+}
+
+.weather img {
+    width: 80px;
+    margin: 1rem 0;
+}

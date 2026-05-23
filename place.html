@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Country Page - Fernanda Amador Solano </title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals, Fernanda Amador, web development, HTML, CSS, JavaScript portfolio page.">
+
+    <meta name="author" content="Fernanda Amador">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rome</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Rome Italy Temple" width="500" height="250">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 1,285 sq km</p>
+            <p><strong>Population:</strong> 2,860,000</p>
+            <p><strong>Capital:</strong> Rome</p>
+            <p><strong>Languages:</strong> Italian</p>
+            <p><strong>Currency:</strong> Euro (€)</p>
+            <p><strong>Time Zone:</strong> UTC+1</p>
+            <p><strong>Calling Code:</strong> +39</p>
+            <p><strong>Internet TLD:</strong> .it</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather-icon.png" alt="Weather Icon">
+
+            <p><strong>Temperature:</strong> 24 °C</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> 11 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>2026 🦋 Fernanda Amador 🦋 Mexico
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
