@@ -118,41 +118,53 @@ const temples = [
     },
 ];
 
+const pageTitle = document.querySelector("#page-title");
+
 createTempleCard(temples);
 
 document.querySelector("#home").addEventListener("click", () => {
+    pageTitle.textContent = "Home";
     createTempleCard(temples);
 })
 
-const oldTemples = temples.filter(temple =>
-    parseInt(temple.dedicated) < 1900
-);
 
 document.querySelector("#old").addEventListener("click", () => {
+    pageTitle.textContent = "Old Temples";
+
+    const oldTemples = temples.filter(temple =>
+        parseInt(temple.dedicated) < 1900
+    );
+
     createTempleCard(oldTemples);
 })
 
-const newTemples = temples.filter(temple =>
-    parseInt(temple.dedicated) > 2000
-);
-
 document.querySelector("#new").addEventListener("click", () => {
+    pageTitle.textContent = "New Temples";
+
+    const newTemples = temples.filter(temple =>
+        parseInt(temple.dedicated) > 2000
+    );
+
     createTempleCard(newTemples);
 })
 
-const largeTemples = temples.filter(temple =>
-    temple.area > 90000
-);
-
 document.querySelector("#large").addEventListener("click", () => {
+    pageTitle.textContent = "Large Temples";
+
+    const largeTemples = temples.filter(temple =>
+        temple.area > 90000
+    );
+
     createTempleCard(largeTemples);
 })
 
-const smallTemples = temples.filter(temple =>
-    temple.area < 10000
-);
-
 document.querySelector("#small").addEventListener("click", () => {
+    pageTitle.textContent = "Small Temples";
+
+    const smallTemples = temples.filter(temple =>
+        temple.area < 10000
+    );
+
     createTempleCard(smallTemples);
 })
 
