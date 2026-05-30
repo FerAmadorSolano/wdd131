@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #432454;
+    --secondary-color: #E5E1EB;
+    --tertiary-color: #FFD166;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#temple-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* HAMBURGER BUTTON */
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* NAVIGATION */
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li {
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    color: var(--tertiary-color);
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* TEMPLE GRID */
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+    text-align: center;
+}
+
+.temple-card {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.temple-card h3 {
+    font-size: 1.5rem;
+    padding-bottom: .75rem;
+}
+
+.temple-card img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+}
+
+.label {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    color: var(--tertiary-color);
+    margin-top: 0.5rem;
+}
+
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
