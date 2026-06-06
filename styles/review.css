@@ -18,10 +18,9 @@
 body {
     font-family: var(--body-font);
     color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 header {
@@ -32,16 +31,17 @@ header {
 }
 
 main {
+    align-self: center;
     max-width: 500px;
-    width: 100%;
-    margin: 3rem auto;
+    width: 90%;
+    margin: 2rem auto;
     padding: 2rem;
+
     background-color: var(--secondary-color);
-    color: var(--text-color);
     border-top: 8px solid var(--accent-color);
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
 }
 
 h1 {
@@ -54,9 +54,17 @@ main p:first-of-type {
 }
 
 #review-count {
+    display: inline-block;
+    margin-left: .5rem;
     font-size: 2rem;
     font-weight: bold;
     color: var(--accent-color);
+}
+
+.success {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 footer {
@@ -64,11 +72,26 @@ footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
-    margin: 1rem auto;
-    border-radius: 4px;
     width: 100%;
+    margin-top: auto;
 }
 
 #lastModified {
     margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        max-width: 650px;
+        padding: 3rem;
+    }
+
+    main p:first-of-type {
+        font-size: 1.4rem;
+    }
+
+    #review-count {
+        font-size: 2.5rem;
+    }
 }
