@@ -3,44 +3,57 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('#addChapter');
 const list = document.querySelector('#list');
 
+let chaptersArray = getChapterList() || [];
+
 // Click event
 button.addEventListener('click', function () {
 
-    // Check if input is blank
     if (input.value.trim() !== '') {
 
-        // Create list item
-        const li = document.createElement('li');
+        const chapter = input.value.trim();
 
-        // Create delete button
-        const deleteButton = document.createElement('button');
+        displayList(chapter);
 
-        // Add text to li
-        li.textContent = input.value;
+        chaptersArray.push(chapter);
 
-        // Add X to delete button
-        deleteButton.textContent = '❌';
+        setChapterList();
 
-        // Append delete button to li
-        li.append(deleteButton);
-
-        // Append li to list
-        list.append(li);
-
-        // Delete event
-        deleteButton.addEventListener('click', function () {
-            list.removeChild(li);
-            input.focus();
-        });
-
-        // Clear input
         input.value = '';
-
-        // Focus input
         input.focus();
     }
-    else {
-        input.focus();
-    }
-
 });
+
+function displayList(item) {
+    let li = document.createElement("li");
+    let deleteButton = document.createElement("button");
+
+    li.textContent = item;
+    deleteButton.textContent = "❌";
+
+    li.append(deleteButton);
+    list.append(li);
+
+    deleteButton.addEventListener("click", function () {
+        list.removeChild(li);
+        deleteChapter(item);
+        input.focus();
+    });
+}
+
+function setChapterList() {
+    localStorage.setItem("myFavBOMList", JSON.stringify(chaptersArray));
+}
+
+function getChapterList() {
+    return JSON.parse(localStorage.getItem("myFavBOMList"));
+}
+
+function deleteChapter(chapter) {
+    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    setChapterList();
+}
+
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
+})
+

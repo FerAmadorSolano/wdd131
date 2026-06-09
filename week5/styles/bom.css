@@ -4,12 +4,12 @@
 }
 
 body {
-    height: 100vh;
+    font-family: Acme, Arial, sans-serif;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Acme, Arial, sans-serif;
 }
 
 h1 {
@@ -18,13 +18,26 @@ h1 {
 
 .input-container {
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+label {
+    min-width: 130px;
+    text-align: right;
+}
+
+input {
+    flex: 1;
+}
+
+#addChapter {
+    white-space: nowrap;
 }
 
 main {
     margin: 1rem auto;
+    width: min(600px, 90%);
     border: 1px solid rgb(0 0 0 / 0.1);
     padding: 1.5rem;
     background-color: #ddd;
@@ -38,7 +51,8 @@ button {
 }
 
 button {
-    margin: 0.5rem;
+    padding: 0.5rem;
+    margin: 0;
 }
 
 .delete {
@@ -86,7 +100,4 @@ li button {
         font-size: 2rem;
     }
 
-    main {
-        width: 320px;
-    }
 }
