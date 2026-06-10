@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest Library</title>
+    <meta name="description"
+        content="BookNest Library - Discover books, explore genres, and join our reading community.">
+    <meta name="author" content="Fernanda Amador">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/base.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="BookNest Library logo">
+            <h1>BookNest Library</h1>
+        </div>
+
+        <button id="menu-btn" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+
+                <img src="images/hero-small.webp" alt="Library bookshelves" loading="lazy">
+            </picture>
+
+            <div class="hero-content">
+                <h2>Welcome to BookNest Library</h2>
+                <p>Discover books, explore genres, and join our reading community.</p>
+                <a href="catalog.html" class="cta-btn">
+                    Explore the Catalog
+                </a>
+            </div>
+        </section>
+
+        <div class="home-layout">
+            <div class="main-column">
+
+                <!-- FEATURED -->
+                <section class="featured-books">
+                    <h2>Featured Books</h2>
+
+                    <div id="featured-container" class="book-grid">
+
+                    </div>
+
+                    <a href="catalog.html" class="section-link">View All Featured Books → </a>
+                </section>
+
+                <!-- RECOMMENDED -->
+                <section class="recommended-books">
+                    <h2>Recommended For You</h2>
+
+                    <div id="recommended-container" class="book-grid">
+
+                    </div>
+
+                    <a href="catalog.html" class="section-link">View All Recommendations → </a>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <!-- READING CLUB -->
+                <section class="reading-club">
+                    <h2>Reading Club</h2>
+                    <p>Join our community of readers!</p>
+                    <p>Share thoughts, get recommendations, and discover new books.</p>
+                    <a href="contact.html" class="cta-btn">Join Now</a>
+                </section>
+
+                <!-- UPCOMING -->
+                <section class="upcoming-reads">
+                    <h2>Upcoming Reads</h2>
+
+                    <ul>
+                        <li>The Book Thief</li>
+                        <li>The Alchemist</li>
+                        <li>Dune Messiah</li>
+                        <li>Little Women</li>
+                    </ul>
+                </section>
+
+                <!-- QUOTE -->
+                <section class="quote-card">
+                    <h2>Quote of the Day</h2>
+                    <blockquote id="quote">
+
+                    </blockquote>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>BockNest Library</h3>
+                <p>A place to discover, save and share books</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> 🦋 Fernanda Amador 🦋 Mexico
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
