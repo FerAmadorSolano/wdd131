@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog | BookNest</title>
+    <meta name="description" content="Catalog of the BookNest Library where you can search by genre.">
+    <meta name="author" content="Fernanda Amador">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/catalog.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/catalog.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="BookNest Library logo">
+            <h1>BookNest Library</h1>
+        </div>
+
+        <button id="menu-btn" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book Catalog</h2>
+
+        <div class="catalog-controls">
+
+            <input type="search" id="search" placeholder="Search books...">
+
+            <select id="genre-filter">
+
+                <option value="all">
+                    All Genres
+                </option>
+
+                <option value="Fantasy">
+                    Fantasy
+                </option>
+
+                <option value="Science Fiction">
+                    Science Fiction
+                </option>
+
+                <option value="Mystery">
+                    Mystery
+                </option>
+
+                <option value="Romance">
+                    Romance
+                </option>
+
+            </select>
+
+            <select id="sort">
+
+                <option value="az">
+                    A-Z
+                </option>
+
+                <option value="rating">
+                    Highest Rating
+                </option>
+
+                <option value="newest">
+                    Newest
+                </option>
+
+            </select>
+
+        </div>
+
+        <section id="catalog-container" class="catalog-grid">
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>BockNest Library</h3>
+                <p>Discover your next favorite book.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <div class="socials">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span> 🦋 Fernanda Amador 🦋 Mexico
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
