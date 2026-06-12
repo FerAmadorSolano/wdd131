@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | BookNest Library</title>
+    <meta name="description" content="BookNest Library - Learn more about BookNest Library and our reading community.">
+    <meta name="author" content="Fernanda Amador">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/about.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="BookNest Library logo">
+            <h1>BookNest Library</h1>
+        </div>
+
+        <button id="menu-btn" aria-label="Open Menu">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-about">
+            <h2>About BookNest Library</h2>
+            <p>
+                Connecting readers through the joy of books and lifelong learning.
+            </p>
+        </section>
+
+        <section class="mission">
+
+            <h2>Our Mission</h2>
+
+            <p>
+                BookNest Library was created to help readers discover new books,
+                build personal reading lists, and connect with a community that
+                shares a love for literature.
+            </p>
+
+        </section>
+
+        <section class="benefits">
+
+            <h2>Benefits of Reading</h2>
+
+            <div class="benefits-grid">
+
+                <article>
+                    <h3>📚 Expand Knowledge</h3>
+                    <p>Learn new ideas and perspectives.</p>
+                </article>
+
+                <article>
+                    <h3>🧠 Improve Memory</h3>
+                    <p>Reading strengthens cognitive skills.</p>
+                </article>
+
+                <article>
+                    <h3>✨ Boost Creativity</h3>
+                    <p>Books inspire imagination and innovation.</p>
+                </article>
+
+                <article>
+                    <h3>❤️ Reduce Stress</h3>
+                    <p>Reading helps you relax and unwind.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="quote-section">
+
+            <h2>Quote of the Day</h2>
+
+            <blockquote id="quote"></blockquote>
+
+        </section>
+
+        <section class="community">
+
+            <h2>Our Reading Community</h2>
+
+            <img src="images/community.webp" alt="Readers sharing books" loading="lazy">
+
+            <p>
+                Our community encourages readers to share recommendations,
+                discuss favorite books, and discover new literary adventures.
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>BockNest Library</h3>
+                <p>A place to discover, save and share books</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="html.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <div class="socials">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+        </div>
+        <p>
+            &copy; <span id="currentyear"></span> 🦋 Fernanda Amador 🦋 Mexico
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
