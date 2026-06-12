@@ -26,6 +26,12 @@ body {
     color: var(--text-color);
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -45,14 +51,45 @@ header {
     width: 50px;
 }
 
-nav {
+#menu-btn {
+    margin: .5rem;
+    padding: 0.15rem;
+}
+
+.navigation {
     display: none;
     list-style: none;
 }
 
-nav.open {
+.navigation li {
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    padding: .75rem 1rem;
+    transition: background-color .3s ease;
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, .15);
+    border-radius: 5px;
+}
+
+.navigation a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.navigation.open {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-color);
+    margin-top: 1rem;
 }
 
 .hero {
@@ -69,7 +106,8 @@ nav.open {
 }
 
 .hero img {
-    height: 400px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -79,7 +117,7 @@ nav.open {
     display: grid;
     place-content: center;
     text-align: center;
-    color: white;
+    color: var(--white);
     background-color: rgba(0, 0, 0, .5);
 }
 
@@ -93,26 +131,188 @@ nav.open {
     border-radius: .5rem;
 }
 
+.home-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-column,
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.featured-books,
+.recommended-books,
+.reading-club,
+.upcoming-reads,
+.quote-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    text-align: center;
+}
+
+
 section:not(.hero) {
     padding: 2rem 5%;
 }
 
 .book-grid {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
+    margin: 1rem 0;
 }
+
+.book-card {
+    background-color: var(--white);
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.book-card img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book-card h3 {
+    margin-top: .75rem;
+}
+
+.reading-club {
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.reading-club img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 1rem;
+
+}
+
+.quote-card {
+    text-align: center;
+    font-style: italic;
+}
+
+.upcoming-reads {
+    text-align: center;
+}
+
+.upcoming-reads ul {
+    list-style: none;
+}
+
+.upcoming-reads li {
+    padding: .5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
 
 /* FOOTER */
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 1.5rem;
     margin-top: 1rem;
-    border-radius: 4px;
 }
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.footer-content h3 {
+    margin-bottom: .75rem;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content li {
+    margin-bottom: .5rem;
+    list-style: none;
+
+}
+
+.footer-content a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
 
 #lastModified {
     margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero img {
+        height: 450px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .navigation a {
+        padding: .5rem;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .home-layout {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 2rem;
+        padding: 2rem 5%;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .book-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
