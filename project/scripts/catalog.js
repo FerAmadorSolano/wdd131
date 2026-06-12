@@ -17,7 +17,7 @@ const books = [
         genre: "Fantasy",
         rating: 4.9,
         year: 1937,
-        image: "https://m.media-amazon.com/images/I/91NExiA59aL._SY385_.jpg"
+        image: "https://m.media-amazon.com/images/I/51c7XhvwHiL._SY445_SX342_ML2_.jpg"
     },
 
     {
@@ -47,7 +47,7 @@ const books = [
         genre: "Romance",
         rating: 4.5,
         year: 1813,
-        image: "https://m.media-amazon.com/images/I/516FJmq10DL._SY445_SX342_ML2_.jpg"
+        image: "https://m.media-amazon.com/images/I/51D96oO0JhL._SY445_SX342_ML2_.jpg"
     },
 
     {
@@ -57,8 +57,58 @@ const books = [
         genre: "Mystery",
         rating: 4.6,
         year: 1892,
-        image: "https://m.media-amazon.com/images/I/51LewU1jR5L._SY445_SX342_ML2_.jpg"
-    }
+        image: "https://m.media-amazon.com/images/I/51HCPtVYrlL._SY445_SX342_ML2_.jpg"
+    },
+
+    {
+        id: 6,
+        title: "Harry Potter",
+        author: "J.K. Rowling",
+        genre: "Fantasy",
+        rating: 4.9,
+        year: 1997,
+        image: "https://m.media-amazon.com/images/I/519XJDItIDL._SY445_SX342_FMwebp_.jpg"
+    },
+
+    {
+        id: 7,
+        title: "Sky",
+        author: "Joss Stirling",
+        genre: "Fantasy",
+        rating: 4.7,
+        year: 2010,
+        image: "https://m.media-amazon.com/images/I/91fSiq+ARaL._SY466_.jpg"
+    },
+
+    {
+        id: 8,
+        title: "Percy Jackson - The Lightning Thief",
+        author: "Rick Riordan",
+        genre: "Fantasy",
+        rating: 4.3,
+        year: 2005,
+        image: "https://m.media-amazon.com/images/I/81ClooUaWzL._SY342_.jpg"
+    },
+
+    {
+        id: 9,
+        title: "The Lion, the Witch and the Wardrobe",
+        author: "C.S. Lewis",
+        genre: "Fantasy",
+        rating: 4.8,
+        year: 1950,
+        image: "https://m.media-amazon.com/images/I/812pHkTwkOL._SY342_.jpg"
+    },
+
+    {
+        id: 10,
+        title: "Hush, Hush",
+        author: "Becca Fitzpatrick",
+        genre: "Romance",
+        rating: 4.5,
+        year: 2009,
+        image: "https://m.media-amazon.com/images/I/814OfoFevSL._SY342_.jpg"
+    },
 
 ];
 

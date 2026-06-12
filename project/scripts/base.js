@@ -9,11 +9,11 @@ document.getElementById("lastModified").innerHTML =
 
 
 // FEATURED BOOKS
-const books = [
+const featured_books = [
     {
         title: "The Hobbit",
         author: "J.R.R. Tolkien",
-        image: "https://m.media-amazon.com/images/I/91NExiA59aL._SY385_.jpg",
+        image: "https://m.media-amazon.com/images/I/51c7XhvwHiL._SY445_SX342_ML2_.jpg",
         rating: "★★★★★"
     },
     {
@@ -25,7 +25,7 @@ const books = [
     {
         title: "Pride and Prejudice",
         author: "Jane Austen",
-        image: "https://m.media-amazon.com/images/I/516FJmq10DL._SY445_SX342_ML2_.jpg",
+        image: "https://m.media-amazon.com/images/I/51D96oO0JhL._SY445_SX342_ML2_.jpg",
         rating: "★★★★★"
     },
     {
@@ -41,7 +41,7 @@ const featuredContainer =
 
 if (featuredContainer) {
 
-    books.forEach(book => {
+    featured_books.forEach(book => {
 
         featuredContainer.innerHTML += `
         <article class="book-card">
@@ -61,15 +61,41 @@ if (featuredContainer) {
 }
 
 // RECOMMENDED BOOKS
+
+const recommended_books = [
+    {
+        title: "Harry Potter",
+        author: "J.K. Rowling",
+        image: "https://m.media-amazon.com/images/I/519XJDItIDL._SY445_SX342_FMwebp_.jpg",
+        rating: "★★★★★"
+    },
+    {
+        title: "Sky",
+        author: "Joss Stirling",
+        image: "https://m.media-amazon.com/images/I/91fSiq+ARaL._SY466_.jpg",
+        rating: "★★★★★"
+    },
+    {
+        title: "Percy Jackson - The Lightning Thief",
+        author: "Rick Riordan",
+        image: "https://m.media-amazon.com/images/I/81ClooUaWzL._SY342_.jpg",
+        rating: "★★★★★"
+    },
+    {
+        title: "The Lion, the Witch and the Wardrobe",
+        author: "C.S. Lewis",
+        image: "https://m.media-amazon.com/images/I/812pHkTwkOL._SY342_.jpg",
+        rating: "★★★★★"
+    }
+];
+
+
 const recommendedContainer =
     document.querySelector("#recommended-container");
 
 if (recommendedContainer) {
 
-    const recommendedBooks =
-        books.slice().reverse();
-
-    recommendedBooks.forEach(book => {
+    recommended_books.forEach(book => {
 
         recommendedContainer.innerHTML += `
         <article class="book-card">
